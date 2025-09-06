@@ -1,0 +1,92 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #00ffe5;
+  text-shadow: 0 0 10px #00ffe5, 0 0 20px #00ffe5;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(3, 120px);
+  gap: 15px;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 120px;
+  height: 120px;
+  border-radius: 15px;
+  background: #111;
+  border: 2px solid #444;
+  font-size: 3rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.cell:hover {
+  border-color: #00ffe5;
+  box-shadow: 0 0 15px #00ffe5, 0 0 30px #00ffe5;
+  transform: scale(1.05);
+}
+
+/* Different colors for X and O */
+.cell.x {
+  color: #00ffe5;
+  text-shadow: 0 0 10px #00ffe5, 0 0 25px #00ffe5;
+}
+
+.cell.o {
+  color: #ff00ff;
+  text-shadow: 0 0 10px #ff00ff, 0 0 25px #ff00ff;
+}
+
+.message {
+  margin-top: 15px;
+  font-size: 1.4rem;
+  text-shadow: 0 0 5px #fff;
+}
+
+.reset-btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #00ffe5, #ff00ff);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.reset-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffe5, 0 0 30px #ff00ff;
+}
