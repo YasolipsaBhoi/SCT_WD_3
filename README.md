@@ -22,7 +22,10 @@ Play with a friend on the same device — featuring a **neon glowing design** �
 ---
 
 ## 🌐 Live Demo
-🔗 [Play Here](https://YasolipsaBhoi.github.io/tic-tac-toe/)  
+🔗 [Play Here]https://YasolipsaBhoi.github.io/SCT_WD_3/
+
+
+ 
 
 ---
 
